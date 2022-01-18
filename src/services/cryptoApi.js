@@ -29,8 +29,12 @@ export const cryptoApi = createApi({
     getExchanges: builder.query({
       query: () => createRequest('/exchanges'),
     }),
+    getStats: builder.query({
+      query: () => createRequest('/stats'),
+    }),
   }),
 });
+
 // https://velog.io/@jungsangu/RTK-Query-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0
 // 정의된 엔드포인트에서 자동으로 생성된 훅을 함수형 컴포넌트에서 사용하기 위해 export
 export const {
@@ -38,4 +42,5 @@ export const {
   useGetCryptoDetailsQuery,
   useGetExchangesQuery,
   useGetCryptoHistoryQuery,
+  useGetStatsQuery,
 } = cryptoApi;
