@@ -346,6 +346,18 @@ width: 70%;
     align-items: center;
     margin-top: 40px;
 }
+.exchange-container{
+    /* position: fixed; */
+    display: flex;
+    /* align-items: center; */
+    /* left: 0; */
+    margin: 300px;
+    height: 100%;
+    width: 100vw;
+    /* margin: 0px; */
+    /* background-color: rgb(0, 21, 41); */
+}
+
 .show-more{
     margin-top: 0px !important;
 }
